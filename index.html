@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="flex flex-col p-2 shadow">
+        <section class="flex items-center justify-between p-4 wrap flex-col sm:flex-row text-left justify-start sm:justify-between">
+            <div class="flex gap-[5px] duration-250 hover:text-[#ff385c] text-3xl font-bold">
+                <i class="fa-brands fa-airbnb font-black text-4xl"></i>
+                <h1>airbnb</h1>
+            </div>
+            <div class="flex gap-4 items-center font-bold text-lg">
+                <p class="text-xl">Stays</p>
+                <p class="font-medium">Experiences</p>
+            </div>
+            <div class="flex items-center text-[#222222] gap-2">
+                <button class="bg-white border-none rounded-full px-4 py-2 hover:bg-[#eee] duration-150">Airbnb your home</button>
+                <i class="fa-solid fa-globe px-3 py-2 hover:bg-[#eee] rounded-full duration-150"></i>
+                <div class="flex gap-3 items-center duration-250 hover:shadow-lg shadow p-4 rounded-full">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-user bg-gray-500 p-2 rounded-full text-white"></i>
+                </div>
+            </div>
+        </section>
+        <section class="flex justify-center">
+            <nav class="flex items-center shadow-lg rounded-full">
+                <div class="flex flex-col rounded-full p-4 hover:bg-gray-300 duration-150">
+                    <p>Where</p>
+                    <p class="text-gray-600">Search destinations</p>
+                </div>
+                <div class="inline-block w-[1px] h-[25px] bg-gray-300 duration-150"></div>
+                <div class="flex flex-col rounded-full p-4 hover:bg-gray-300">
+                    <p>Check in</p>
+                    <p class="text-gray-600">Add dates</p>
+                </div>
+                <div class="inline-block w-[1px] h-[25px] bg-gray-300 duration-150"></div>
+                <div class="flex flex-col rounded-full p-4 hover:bg-gray-300">
+                    <p>Check out</p>
+                    <p class="text-gray-600">Add dates</p>
+                </div>
+                <div class="inline-block w-[1px] h-[25px] bg-gray-300 duration-150"></div>
+                <div class="flex items-center rounded-full hover:bg-gray-300">
+                    <div class="flex flex-col p-4">
+                        <p>Who</p>
+                        <p class="text-gray-600">Add guests</p>
+                    </div>
+                    <i class="fa-solid fa-magnifying-glass text-white p-4 bg-[#ff385c] rounded-full"></i>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <section class="flex gap-4 justify-center font-bold text-2xl">
+        <div class="flex flex-col p-4">
+            <i class="fa-solid fa-water-ladder"></i>
+            <p class="text-sm font-medium">Amazing pools</p>
+            <hr class="w-[100px] h-[3px] rounded bg-black">
+        </div>
+        <div class="flex flex-col p-4">
+            <i class="fa-solid fa-ticket"></i>
+            <p class="text-sm font-medium">Icons</p>
+        </div>
+        <div class="flex flex-col p-4">
+            <i class="fa-regular fa-snowflake"></i>
+            <p class="text-sm font-medium">Arctic</p>
+        </div>
+        <div class="flex flex-col p-4">
+            <i class="fa-solid fa-house"></i>
+            <p class="text-sm font-medium">Cabins</p>
+        </div>
+        <div class="flex flex-col p-4">
+            <i class="fa-solid fa-mountain"></i>
+            <p class="text-sm font-medium">Caves</p>
+        </div>
+        <div class="flex flex-col p-4">
+            <i class="fa-solid fa-campground"></i>
+            <p class="text-sm font-medium">Camping</p>
+        </div>
+        <div class="flex flex-col p-4">
+            <i class="fa-solid fa-bowl-food"></i>
+            <p class="text-sm font-medium">Luxe</p>
+        </div>
+        <div class="flex flex-col p-4">
+            <i class="fa-solid fa-caravan"></i>
+            <p class="text-sm font-medium">Camper vans</p>
+        </div>
+        <div class="flex items-center">
+            <i class="fa-solid fa-caret-right  border rounded-full px-4 py-3"></i>
+        </div>
+        <div class="flex items-center">
+            <div class="flex items-center gap-2 text-lg rounded-xl border-gray-300 p-4 font-medium border">
+                <i class="fa-solid fa-sliders"></i>
+                <p>Filters</p>
+            </div>
+        </div>
+    </section>
+    <main class="p-16 flex-col gap-8 wrap">
+        <div class="flex gap-8 my-8">  
+            <div class="flex flex-col inline-block">
+                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                </div>
+                <div class="flex justify-between font-bold">
+                    <p>Ayia Napa</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.84</p>
+                    </div>
+                </div>
+                <p>Hosted by a business</p>
+                <p>1-6 Mar</p>
+                <div class="flex font-bold">
+                    <p>€ 203 night</p>
+                </div>
+            </div>
+            <div class="flex flex-col inline-block">
+                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house2.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                </div>
+                <div class="flex justify-between font-bold">
+                    <p>Protaras</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.98</p>
+                    </div>
+                </div>
+                <p>Hosted by Panagiotis</p>
+                <p>9-14 Mar</p>
+                <div class="flex font-bold">
+                    <p>€ 82 night</p>
+                </div>
+            </div>
+            <div class="flex flex-col inline-block">
+                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house3.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                </div>
+                <div class="flex justify-between font-bold">
+                    <p>Ayia Napa</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <p>5.0</p>
+                    </div>
+                </div>
+                <p>Hosted by a business</p>
+                <p>2-7 Mar</p>
+                <div class="flex font-bold">
+                    <p>€ 260 night</p>
+                </div>
+            </div>
+            <div class="flex flex-col inline-block">
+                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                </div>
+                <div class="flex justify-between font-bold">
+                    <p>Ayia Napa</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.84</p>
+                    </div>
+                </div>
+                <p>Hosted by a business</p>
+                <p>1-6 Mar</p>
+                <div class="flex font-bold">
+                    <p>€ 203 night</p>
+                </div>
+            </div>
+            <div class="flex flex-col inline-block">
+                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                </div>
+                <div class="flex justify-between font-bold">
+                    <p>Ayia Napa</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.84</p>
+                    </div>
+                </div>
+                <p>Hosted by a business</p>
+                <p>1-6 Mar</p>
+                <div class="flex font-bold">
+                    <p>€ 203 night</p>
+                </div>
+            </div>
+            <div class="flex flex-col inline-block">
+                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                </div>
+                <div class="flex justify-between font-bold">
+                    <p>Ayia Napa</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.84</p>
+                    </div>
+                </div>
+                <p>Hosted by a business</p>
+                <p>1-6 Mar</p>
+                <div class="flex font-bold">
+                    <p>€ 203 night</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-8">
+            <div class="flex flex-col inline-block">
+                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                </div>
+                <div class="flex justify-between font-bold">
+                    <p>Ayia Napa</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.84</p>
+                    </div>
+                </div>
+                <p>Hosted by a business</p>
+                <p>1-6 Mar</p>
+                <div class="flex font-bold">
+                    <p>€ 203 night</p>
+                </div>
+            </div>
+            <div class="flex flex-col inline-block">
+                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                </div>
+                <div class="flex justify-between font-bold">
+                    <p>Ayia Napa</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.84</p>
+                    </div>
+                </div>
+                <p>Hosted by a business</p>
+                <p>1-6 Mar</p>
+                <div class="flex font-bold">
+                    <p>€ 203 night</p>
+                </div>
+            </div>
+            <div class="flex flex-col inline-block">
+                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                </div>
+                <div class="flex justify-between font-bold">
+                    <p>Ayia Napa</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.84</p>
+                    </div>
+                </div>
+                <p>Hosted by a business</p>
+                <p>1-6 Mar</p>
+                <div class="flex font-bold">
+                    <p>€ 203 night</p>
+                </div>
+            </div>
+            <div class="flex flex-col inline-block">
+                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                </div>
+                <div class="flex justify-between font-bold">
+                    <p>Ayia Napa</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.84</p>
+                    </div>
+                </div>
+                <p>Hosted by a business</p>
+                <p>1-6 Mar</p>
+                <div class="flex font-bold">
+                    <p>€ 203 night</p>
+                </div>
+            </div>
+            <div class="flex flex-col inline-block">
+                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                </div>
+                <div class="flex justify-between font-bold">
+                    <p>Ayia Napa</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.84</p>
+                    </div>
+                </div>
+                <p>Hosted by a business</p>
+                <p>1-6 Mar</p>
+                <div class="flex font-bold">
+                    <p>€ 203 night</p>
+                </div>
+            </div>
+            <div class="flex flex-col inline-block">
+                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                </div>
+                <div class="flex justify-between font-bold">
+                    <p>Ayia Napa</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.84</p>
+                    </div>
+                </div>
+                <p>Hosted by a business</p>
+                <p>1-6 Mar</p>
+                <div class="flex font-bold">
+                    <p>€ 203 night</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
