@@ -8,6 +8,20 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
+    <nav class="flex gap-8 py-4 px-16 md:hidden fixed w-full mt-[157%] bg-white shadow">
+        <div class="flex flex-col text-[#e81948]">
+            <i class="fa-solid fa-magnifying-glass text-3xl"></i>
+            <p>Explore</p>
+        </div>
+        <div class="flex flex-col">
+            <i class="fa-solid fa-heart text-3xl"></i>
+            <p>Whishlist</p>
+        </div>
+        <div class="flex flex-col">
+            <i class="fa-solid fa-user text-3xl"></i>
+            <p>Log in</p>
+        </div>
+    </nav>
     <header class="flex flex-col p-2 shadow">
         <section class="flex items-center justify-between p-4 wrap flex-col sm:flex-row text-left justify-start sm:justify-between">
             <div class="flex gap-[5px] duration-250 hover:text-[#ff385c] text-3xl font-bold">
@@ -28,24 +42,24 @@
             </div>
         </section>
         <section class="flex justify-center">
-            <nav class="flex items-center shadow-lg rounded-full">
-                <div class="flex flex-col rounded-full p-4 hover:bg-gray-300 duration-150">
+            <nav class="flex wrap flex-col sm:flex-row items-center shadow-lg rounded-full w-[50/6%]">
+                <div class="flex flex-col rounded-full py-4 px-8 hover:bg-gray-300 duration-150">
                     <p>Where</p>
                     <p class="text-gray-600">Search destinations</p>
                 </div>
                 <div class="inline-block w-[1px] h-[25px] bg-gray-300 duration-150"></div>
-                <div class="flex flex-col rounded-full p-4 hover:bg-gray-300">
+                <div class="flex flex-col rounded-full py-4 px-10 hover:bg-gray-300">
                     <p>Check in</p>
                     <p class="text-gray-600">Add dates</p>
                 </div>
                 <div class="inline-block w-[1px] h-[25px] bg-gray-300 duration-150"></div>
-                <div class="flex flex-col rounded-full p-4 hover:bg-gray-300">
+                <div class="flex flex-col rounded-full py-4 px-10 hover:bg-gray-300">
                     <p>Check out</p>
                     <p class="text-gray-600">Add dates</p>
                 </div>
                 <div class="inline-block w-[1px] h-[25px] bg-gray-300 duration-150"></div>
                 <div class="flex items-center rounded-full hover:bg-gray-300">
-                    <div class="flex flex-col p-4">
+                    <div class="flex flex-col py-4 px-10">
                         <p>Who</p>
                         <p class="text-gray-600">Add guests</p>
                     </div>
@@ -54,7 +68,7 @@
             </nav>
         </section>
     </header>
-    <section class="flex gap-4 justify-center font-bold text-2xl">
+    <section class="flex sm:gap-4 wrap flex-col sm:flex-row gap-1 justify-center font-bold text-2xl">
         <div class="flex flex-col p-4">
             <i class="fa-solid fa-water-ladder"></i>
             <p class="text-sm font-medium">Amazing pools</p>
@@ -99,10 +113,10 @@
         </div>
     </section>
     <main class="p-16 flex-col gap-8 wrap">
-        <div class="flex gap-8 my-8">  
+        <div class="flex gap-8 my-8 wrap flex-col sm:flex-row">  
             <div class="flex flex-col inline-block">
-                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
-                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                <div class="flex flex-col rounded-xl inline-block w-[295px] md:w-[195px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[265px] md:ml-[165px] mt-[10px]"></i>
                 </div>
                 <div class="flex justify-between font-bold">
                     <p>Ayia Napa</p>
@@ -118,8 +132,8 @@
                 </div>
             </div>
             <div class="flex flex-col inline-block">
-                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house2.avif); background-size: cover; background-position: center;">
-                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                <div class="flex flex-col rounded-xl inline-block w-[295px] md:w-[195px] h-[300px] justify-end" style="background-image: url(./imgs/house2.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[265px] md:ml-[165px] mt-[10px]"></i>
                 </div>
                 <div class="flex justify-between font-bold">
                     <p>Protaras</p>
@@ -135,8 +149,8 @@
                 </div>
             </div>
             <div class="flex flex-col inline-block">
-                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house3.avif); background-size: cover; background-position: center;">
-                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                <div class="flex flex-col rounded-xl inline-block w-[295px] md:w-[195px] h-[300px] justify-end" style="background-image: url(./imgs/house3.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[265px] md:ml-[165px] mt-[10px]"></i>
                 </div>
                 <div class="flex justify-between font-bold">
                     <p>Ayia Napa</p>
@@ -152,8 +166,8 @@
                 </div>
             </div>
             <div class="flex flex-col inline-block">
-                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
-                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                <div class="flex flex-col rounded-xl inline-block w-[295px] md:w-[195px] h-[300px] justify-end" style="background-image: url(./imgs/house4.jpeg); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[265px] md:ml-[165px] mt-[10px]"></i>
                 </div>
                 <div class="flex justify-between font-bold">
                     <p>Ayia Napa</p>
@@ -169,8 +183,8 @@
                 </div>
             </div>
             <div class="flex flex-col inline-block">
-                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
-                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                <div class="flex flex-col rounded-xl inline-block w-[295px] md:w-[195px] h-[300px] justify-end" style="background-image: url(./imgs/house5.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[265px] md:ml-[165px] mt-[10px]"></i>
                 </div>
                 <div class="flex justify-between font-bold">
                     <p>Ayia Napa</p>
@@ -186,8 +200,8 @@
                 </div>
             </div>
             <div class="flex flex-col inline-block">
-                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
-                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                <div class="flex flex-col rounded-xl inline-block w-[295px] md:w-[195px] h-[300px] justify-end" style="background-image: url(./imgs/house6.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[265px] md:ml-[165px] mt-[10px]"></i>
                 </div>
                 <div class="flex justify-between font-bold">
                     <p>Ayia Napa</p>
@@ -203,10 +217,10 @@
                 </div>
             </div>
         </div>
-        <div class="flex gap-8">
+        <div class="flex gap-8 wrap flex-col sm:flex-row">
             <div class="flex flex-col inline-block">
-                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
-                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                <div class="flex flex-col rounded-xl inline-block w-[295px] md:w-[195px] h-[300px] justify-end" style="background-image: url(./imgs/house7.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[265px] md:ml-[165px] mt-[10px]"></i>
                 </div>
                 <div class="flex justify-between font-bold">
                     <p>Ayia Napa</p>
@@ -222,8 +236,8 @@
                 </div>
             </div>
             <div class="flex flex-col inline-block">
-                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
-                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                <div class="flex flex-col rounded-xl inline-block w-[295px] md:w-[195px] h-[300px] justify-end" style="background-image: url(./imgs/house8.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[265px] md:ml-[165px] mt-[10px]"></i>
                 </div>
                 <div class="flex justify-between font-bold">
                     <p>Ayia Napa</p>
@@ -239,8 +253,8 @@
                 </div>
             </div>
             <div class="flex flex-col inline-block">
-                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
-                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                <div class="flex flex-col rounded-xl inline-block w-[295px] md:w-[195px] h-[300px] justify-end" style="background-image: url(./imgs/house9.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[265px] md:ml-[165px] mt-[10px]"></i>
                 </div>
                 <div class="flex justify-between font-bold">
                     <p>Ayia Napa</p>
@@ -256,8 +270,8 @@
                 </div>
             </div>
             <div class="flex flex-col inline-block">
-                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
-                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                <div class="flex flex-col rounded-xl inline-block w-[295px] md:w-[195px] h-[300px] justify-end" style="background-image: url(./imgs/house10.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[265px] md:ml-[165px] mt-[10px]"></i>
                 </div>
                 <div class="flex justify-between font-bold">
                     <p>Ayia Napa</p>
@@ -273,8 +287,8 @@
                 </div>
             </div>
             <div class="flex flex-col inline-block">
-                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
-                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                <div class="flex flex-col rounded-xl inline-block w-[295px] md:w-[195px] h-[300px] justify-end" style="background-image: url(./imgs/house11.avif); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[265px] md:ml-[165px] mt-[10px]"></i>
                 </div>
                 <div class="flex justify-between font-bold">
                     <p>Ayia Napa</p>
@@ -290,8 +304,8 @@
                 </div>
             </div>
             <div class="flex flex-col inline-block">
-                <div class="flex flex-col rounded-xl inline-block w-[250px] h-[300px] justify-end" style="background-image: url(./imgs/house1.avif); background-size: cover; background-position: center;">
-                    <i class="fa-solid fa-heart text-2xl ml-[210px] mt-[10px]"></i>
+                <div class="flex flex-col rounded-xl inline-block w-[295px] md:w-[195px] h-[300px] justify-end" style="background-image: url(./imgs/house12.webp); background-size: cover; background-position: center;">
+                    <i class="fa-solid fa-heart text-2xl ml-[265px] md:ml-[165px] mt-[10px]"></i>
                 </div>
                 <div class="flex justify-between font-bold">
                     <p>Ayia Napa</p>
@@ -306,7 +320,161 @@
                     <p>€ 203 night</p>
                 </div>
             </div>
+        </div>
+        <div class="flex flex-col gap-4 items-center justify-center p-16">
+            <p class="text-2xl font-bold">Continue exploring amazing pools</p>
+            <button class="text-white text-xl font-bold border-none bg-[#333] rounded hover:bg-black hover:cursor-pointer p-4">Show more</button>
         </div>
     </main>
+    <footer class="flex bg-[#f7f7f7] text-[#222] flex-col py-4 px-8">
+        <p class="text-[22px]">Inspiration for future getaways</p>
+        <section class="flex flex-col md:flex-row text-[14px] text-[#6a6a6a]">
+            <div class="flex flex-col p-4 text-[#222]">
+                <p>Popular</p>
+                <hr class="w-[100px] h-[3px] rounded bg-black">
+            </div>
+            <div class="flex flex-col p-4">
+                <p>Arts & culture</p>
+            </div>
+            <div class="flex flex-col p-4">
+                <p>Outdoors</p>
+            </div>
+            <div class="flex flex-col p-4">
+                <p>Mountains</p>
+            </div>
+            <div class="flex flex-col p-4">
+                <p>Beach</p>
+            </div>
+            <div class="flex flex-col p-4">
+                <p>Unique states</p>
+            </div>
+            <div class="flex flex-col p-4">
+                <p>Catagories</p>
+            </div>
+        </section>
+        <hr class="text-[#ddd]">
+        <section class="flex flex-col md:flex-row p-4 gap-16">
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Canmore</p>
+                    <p>Pre-friendly rentals</p>
+                </div>
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Tucson</p>
+                    <p>Pre-friendly rentals</p>
+                </div>
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Anaheim</p>
+                    <p>Apartment rentals</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Devalmadena</p>
+                    <p>House rentals</p>
+                </div>
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Jasper</p>
+                    <p>Cabin rentals</p>
+                </div>
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Monterey</p>
+                    <p>Cottege rentals</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Marbella</p>
+                    <p>Villa rentals</p>
+                </div>
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Mountain View</p>
+                    <p>Pet-friendly rentals</p>
+                </div>
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Paso Robles</p>
+                    <p>Cottege rentals</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Mijas</p>
+                    <p>Apartment rentals</p>
+                </div>
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Devonport</p>
+                    <p>Cottege rentals</p>
+                </div>
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Santa Barbara</p>
+                    <p>House rentals</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Prescortt</p>
+                    <p>House rentals</p>
+                </div>
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Mallacoota</p>
+                    <p>Beach house rentals</p>
+                </div>
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Sonoma</p>
+                    <p>Beach house rentals</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Scott Sdale</p>
+                    <p>House rentals</p>
+                </div>
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Ibiza</p>
+                    <p>Vacation rentals</p>
+                </div>
+                <div class="flex flex-col text-[#777] text-left">
+                    <p class="text-black">Show more ↓</p>
+                </div>
+            </div>
+        </section>
+        <hr class="text-[#ddd]">
+        <section class="flex flex-col gap-32 md:flex-row p-4">
+            <div class="flex flex-col text-[#222] text-left gap-4">
+                <p class="text-xl">Support</p>
+                <p>Help Center</p>
+                <p>AirCover</p>
+                <p>Anti-discrimination</p>
+                <p>Disability Support</p>
+                <p>Cencelation options</p>
+                <p>Report neigborhood concern</p>
+            </div>
+            <div class="flex flex-col text-[#222] text-left gap-4">
+                <p class="text-xl">Hosting</p>
+                <p>Airbnb your home</p>
+                <p>AirCover for Hosts</p>
+                <p>Hosting resources</p>
+                <p>Community forum</p>
+                <p>Hosting respomsibily</p>
+                <p>Airbnb-friendly apartments</p>
+                <p>Join a free Hosting class</p>
+                <p>Find a co-host</p>
+            </div>
+            <div class="flex flex-col text-[#222] text-left gap-4">
+                <p class="text-xl">Airbnb</p>
+                <p>Newsroom</p>
+                <p>New features</p>
+                <p>Careers</p>
+                <p>Disability Support</p>
+                <p>Investors</p>
+                <p>Airbnb.org emergency stays</p>
+            </div>
+        </section>
+        <hr class="text-[#ddd]">
+        <section class="flex p-4">
+            <p>© 2025 Airbnb, Inc.
+                · Terms · Sitemap · Privacy · Your Privacy Choices</p>
+        </section>
+    </footer>
 </body>
 </html>
